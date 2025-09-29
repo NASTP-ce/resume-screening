@@ -1,0 +1,24 @@
+# Runtime UI
+streamlit>=1.37,<2.0
+Pillow>=10.4,<11.0
+requests>=2.32,<3.0
+python-dotenv>=1.0,<2.0
+
+# PDF loading
+pypdf>=4.2,<5.0
+
+# LangGraph / LangChain stack
+langgraph>=0.2.34,<0.3
+langchain>=0.2.14,<0.3
+langchain-community>=0.2.12,<0.3
+langchain-ollama>=0.1.0,<0.2
+
+# Vector store and embeddings (imported by the app; optional at runtime)
+chromadb>=0.5.3,<0.6
+sentence-transformers>=3.0,<4.0
+InstructorEmbedding>=1.0.1,<2.0
+
+# Note: You also need a running Ollama server with an LLM model pulled, e.g.:
+#   ollama serve
+#   ollama pull llama3
+
